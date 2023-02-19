@@ -1,0 +1,658 @@
+[
+    {
+        "name": "Adata XPG Spectrix S40G RGB 4TB SSD M.2 NVMe PCIe Gen3x4",
+        "price": "658",
+        "category": "Discos Duros",
+        "id_data": 958471,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/37/378875/1512-adata-xpg-spectrix-s40g-rgb-4tb-ssd-m2-nvme-pcie-gen3x4.jpg",
+        "slug": "https://www.pccomponentes.com/adata-xpg-spectrix-s40g-rgb-4tb-ssd-m2-nvme-pcie-gen3x4"
+    },
+    {
+        "name": "SanDisk Extreme Pro SSD Externo 2TB USB-C",
+        "price": "653.25",
+        "category": "Discos Duros",
+        "id_data": 257001,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/30/305203/1665-sandisk-extreme-pro-ssd-externo-2tb-usb-c.jpg",
+        "slug": "https://www.pccomponentes.com/sandisk-extreme-pro-ssd-externo-2tb-usb-c"
+    },
+    {
+        "name": "LaCie Rugged SSD NVMe 2TB Thunderbolt/USB-C",
+        "price": "647.5",
+        "category": "Discos Duros",
+        "id_data": 692738,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/39/399280/1399-lacie-rugged-ssd-nvme-2tb-thunderbolt-usb-c.jpg",
+        "slug": "https://www.pccomponentes.com/lacie-rugged-ssd-nvme-2tb-thunderbolt-usb-c"
+    },
+    {
+        "name": "G-Technology G-Drive Mobile SSD 2TB USB-C",
+        "price": "609.25",
+        "category": "Discos Duros",
+        "id_data": 906697,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/39/399115/1101-g-technology-g-drive-mobile-ssd-2tb-usb-c.jpg",
+        "slug": "https://www.pccomponentes.com/g-technology-g-drive-mobile-ssd-2tb-usb-c"
+    },
+    {
+        "name": "Corsair MP400 4 TB SSD M.2 NVMe PCIE Gen3 x4",
+        "price": "601.32",
+        "category": "Discos Duros",
+        "id_data": 646223,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/78/788845/1820-corsair-mp400-4-tb-ssd-m2-nvme-pcie-gen3-x4.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-mp400-4-tb-ssd-m2-nvme-pcie-gen3-x4"
+    },
+    {
+        "name": "Lacie STHK2000800 2TB SSD USB 3.2",
+        "price": "576.24",
+        "category": "Discos Duros",
+        "id_data": 248556,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/28/281210/lacie-sthk2000800-2tb-ssd-usb-32.jpg",
+        "slug": "https://www.pccomponentes.com/lacie-sthk2000800-2tb-ssd-usb-32"
+    },
+    {
+        "name": "SanDisk Extreme Portable SSD V2 4TB USB-C",
+        "price": "574.99",
+        "category": "Discos Duros",
+        "id_data": 561897,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/40/407620/1219-sandisk-extreme-portable-ssd-v2-4tb-usb-c.jpg",
+        "slug": "https://www.pccomponentes.com/sandisk-extreme-portable-ssd-v2-4tb-usb-c"
+    },
+    {
+        "name": "WD Red SA500 NAS 4TB SSD 2.5\" SATA 3",
+        "price": "688.79",
+        "category": "Discos Duros",
+        "id_data": 107552,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/29/294070/wd-red-sa500-nas-4tb-ssd-25-sata-3.jpg",
+        "slug": "https://www.pccomponentes.com/wd-red-sa500-nas-4tb-ssd-25-sata-3"
+    },
+    {
+        "name": "LaCie Rugged SSD Pro 1TB USB-C/Thunderbolt",
+        "price": "592",
+        "category": "Discos Duros",
+        "id_data": 612494,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/39/399276/1391-lacie-rugged-ssd-pro-1tb-usb-c-thunderbolt.jpg",
+        "slug": "https://www.pccomponentes.com/lacie-rugged-ssd-pro-1tb-usb-c-thunderbolt"
+    },
+    {
+        "name": "WD My Passport SSD 4TB USB-C Gris",
+        "price": "546.34",
+        "category": "Discos Duros",
+        "id_data": 268074,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/51/514233/161-wd-my-passport-ssd-4tb-usb-c-gris.jpg",
+        "slug": "https://www.pccomponentes.com/wd-my-passport-ssd-4tb-usb-c-gris"
+    },
+    {
+        "name": "Samsung 870 EVO SSD 2.5\" 4TB SATA3 Negro",
+        "price": "541.57",
+        "category": "Discos Duros",
+        "id_data": 315081,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/350362/1585-samsung-870-qvo-ssd-25-4tb-sata3-negro.jpg",
+        "slug": "https://www.pccomponentes.com/samsung-870-evo-ssd-25-4tb-sata3-negro"
+    },
+    {
+        "name": "SanDisk Ultra 3D 2.5\" SSD 4TB SATA 3",
+        "price": "541.05",
+        "category": "Discos Duros",
+        "id_data": 455563,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/38/387717/1325-sandisk-ultra-3d-25-ssd-4tb-sata-3.jpg",
+        "slug": "https://www.pccomponentes.com/sandisk-ultra-3d-25-ssd-4tb-sata-3"
+    },
+    {
+        "name": "Seagate IronWolf 510 SSD M.2 1.92TB 3D TLC NAS",
+        "price": "541",
+        "category": "Discos Duros",
+        "id_data": 409945,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/59/590673/1767-seagate-ironwolf-510-ssd-m2-192tb-3d-tlc-nas.jpg",
+        "slug": "https://www.pccomponentes.com/seagate-ironwolf-510-ssd-m2-192tb-3d-tlc-nas"
+    },
+    {
+        "name": "Lenovo ThinkSystem 5300 Entry 2.5\" SSD 960GB SATA 3 3D TLC",
+        "price": "537.28",
+        "category": "Discos Duros",
+        "id_data": 875909,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/38/386430/1556-lenovo-thinksystem-5300-entry-25-ssd-960gb-sata-3-3d-tlc.jpg",
+        "slug": "https://www.pccomponentes.com/lenovo-thinksystem-5300-entry-25-ssd-960gb-sata-3-3d-tlc"
+    },
+    {
+        "name": "Lenovo ThinkSystem 5210 ION 2.5\" SSD 960GB SATA 3 QLC 3D NAND",
+        "price": "627.2",
+        "category": "Discos Duros",
+        "id_data": 378242,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/38/386429/1687-lenovo-thinksystem-5210-ion-25-ssd-960gb-sata-3-qlc-3d-nand.jpg",
+        "slug": "https://www.pccomponentes.com/lenovo-thinksystem-5210-ion-25-ssd-960gb-sata-3-qlc-3d-nand"
+    },
+    {
+        "name": "LaCie Portable SSD 2TB USB-C Plata",
+        "price": "527.39",
+        "category": "Discos Duros",
+        "id_data": 398621,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/58/589323/1836-lacie-portable-ssd-2tb-usb-c-plata.jpg",
+        "slug": "https://www.pccomponentes.com/lacie-portable-ssd-2tb-usb-c-plata"
+    },
+    {
+        "name": "WD Black P50 Game Drive SSD Externo 2TB USB-C 3.1",
+        "price": "526.59",
+        "category": "Discos Duros",
+        "id_data": 235731,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/30/302144/1305-wd-black-p50-game-drive-ssd-externo-2tb-usb-c-31.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-p50-game-drive-ssd-externo-2tb-usb-c-31"
+    },
+    {
+        "name": "Crucial X6 SSD 4TB USB-C Negro",
+        "price": "582.39",
+        "category": "Discos Duros",
+        "id_data": 191079,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/42/429350/1717-crucial-x6-ssd-4tb-usb-c-negro.jpg",
+        "slug": "https://www.pccomponentes.com/crucial-x6-ssd-4tb-usb-c-negro"
+    },
+    {
+        "name": "HPE Proliant P07922-B21 SSD 2.5\" SFF 480GB SATA3",
+        "price": "522.99",
+        "category": "Discos Duros",
+        "id_data": 532005,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/34/343000/1466-hpe-proliant-p07922-b21-ssd-25-sff-480gb-sata3.jpg",
+        "slug": "https://www.pccomponentes.com/hpe-proliant-p07922-b21-ssd-25-sff-480gb-sata3"
+    },
+    {
+        "name": "SanDisk Professional G-Drive SSD 2TB USB-C",
+        "price": "522.16",
+        "category": "Discos Duros",
+        "id_data": 614382,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/58/589316/1952-sandisk-professional-g-drive-ssd-2tb-usb-c.jpg",
+        "slug": "https://www.pccomponentes.com/sandisk-professional-g-drive-ssd-2tb-usb-c"
+    },
+    {
+        "name": "Kingston Data Center DC500R SSD 2.5\" 1.92TB SATA3 3D TLC",
+        "price": "561",
+        "category": "Discos Duros",
+        "id_data": 407225,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/354741/111-kingston-data-center-dc500r-ssd-25-192tb-sata3-3d-tlc.jpg",
+        "slug": "https://www.pccomponentes.com/kingston-data-center-dc500r-ssd-25-192tb-sata3-3d-tlc"
+    },
+    {
+        "name": "Dell 400-BJSN 2.5\" SSD 480GB SATA3",
+        "price": "519.01",
+        "category": "Discos Duros",
+        "id_data": 794893,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/355292/1112-dell-400-bjsn-25-ssd-480gb-sata3.jpg",
+        "slug": "https://www.pccomponentes.com/dell-400-bjsn-25-ssd-480gb-sata3"
+    },
+    {
+        "name": "WD Blue 3D NAND SSD 2.5\" 4TB SATA3",
+        "price": "534.8",
+        "category": "Discos Duros",
+        "id_data": 234774,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/355018/1900-wd-blue-3d-nand-ssd-25-4tb-sata3.jpg",
+        "slug": "https://www.pccomponentes.com/wd-blue-3d-nand-ssd-25-4tb-sata3"
+    },
+    {
+        "name": "WD Black D30 Game Drive 2TB USB-C para Xbox Series/PlayStation 5",
+        "price": "505.01",
+        "category": "Discos Duros",
+        "id_data": 923017,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/58/589358/1463-wd-black-d30-game-drive-2tb-usb-c-para-xbox-series-playstation-5.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-d30-game-drive-2tb-usb-c-para-xbox-series-playstation-5"
+    },
+    {
+        "name": "WD Black D50 Game Dock 1TB SSD",
+        "price": "500",
+        "category": "Discos Duros",
+        "id_data": 938536,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/39/395788/1609-wd-black-d50-game-dock-1tb-ssd-opiniones.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-d50-game-dock-1tb-ssd"
+    },
+    {
+        "name": "Lenovo ThinkSystem 5300 M.2 SSD 480GB SATA 3",
+        "price": "491.84",
+        "category": "Discos Duros",
+        "id_data": 721272,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/38/386435/1507-lenovo-thinksystem-5300-m2-ssd-480gb-sata-3.jpg",
+        "slug": "https://www.pccomponentes.com/lenovo-thinksystem-5300-m2-ssd-480gb-sata-3"
+    },
+    {
+        "name": "Lenovo ThinkSystem 5300 2.5\" SSD 480GB SATA 3 3D TLC NAND",
+        "price": "491.31",
+        "category": "Discos Duros",
+        "id_data": 595171,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/59/590572/1513-lenovo-thinksystem-5300-25-ssd-480gb-sata-3-3d-tlc-nand.jpg",
+        "slug": "https://www.pccomponentes.com/lenovo-thinksystem-5300-25-ssd-480gb-sata-3-3d-tlc-nand"
+    },
+    {
+        "name": "Seagate FireCuda Gaming SSD 2TB USB-C Negro",
+        "price": "484.97",
+        "category": "Discos Duros",
+        "id_data": 940916,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/51/515552/1916-seagate-firecuda-gaming-ssd-2tb-usb-c-negro.jpg",
+        "slug": "https://www.pccomponentes.com/seagate-firecuda-gaming-ssd-2tb-usb-c-negro"
+    },
+    {
+        "name": "Western Digital My Passport Go SSD 2TB USB 3.1 Azul",
+        "price": "484.69",
+        "category": "Discos Duros",
+        "id_data": 538864,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/30/302171/1494-western-digital-my-passport-go-ssd-2tb-usb-31-azul.jpg",
+        "slug": "https://www.pccomponentes.com/western-digital-my-passport-go-ssd-2tb-usb-31-azul"
+    },
+    {
+        "name": "WD Gold Enterprise Class SSD 1.92TB NVMe",
+        "price": "531.69",
+        "category": "Discos Duros",
+        "id_data": 120365,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/59/590684/1836-wd-gold-enterprise-class-ssd-192tb-nvme.jpg",
+        "slug": "https://www.pccomponentes.com/wd-gold-enterprise-class-ssd-192tb-nvme"
+    },
+    {
+        "name": "Transcend JetDrive 825 SSD 960GB Thunderbolt",
+        "price": "465.85",
+        "category": "Discos Duros",
+        "id_data": 495177,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/59/590910/1594-transcend-jetdrive-825-ssd-960gb-thunderbolt.jpg",
+        "slug": "https://www.pccomponentes.com/transcend-jetdrive-825-ssd-960gb-thunderbolt"
+    },
+    {
+        "name": "SanDisk Extreme Portable SSD 2TB",
+        "price": "465.77",
+        "category": "Discos Duros",
+        "id_data": 223864,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/15/151023/1.jpg",
+        "slug": "https://www.pccomponentes.com/sandisk-extreme-portable-ssd-2tb"
+    },
+    {
+        "name": "Synology SAT5210-960G 960GB SSD SATA 3",
+        "price": "462.99",
+        "category": "Discos Duros",
+        "id_data": 331342,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/1000/10004331/1174-synology-sat5210-960g-960gb-ssd-sata-3-comprar.jpg",
+        "slug": "https://www.pccomponentes.com/synology-sat5210-960g-960gb-ssd-sata-3"
+    },
+    {
+        "name": "Samsung 860 Pro SSD Series 512GB",
+        "price": "448",
+        "category": "Discos Duros",
+        "id_data": 464454,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/15/150867/1.jpg",
+        "slug": "https://www.pccomponentes.com/samsung-860-pro-ssd-series-512gb"
+    },
+    {
+        "name": "Crucial MX500 SSD 4TB SATA3",
+        "price": "481",
+        "category": "Discos Duros",
+        "id_data": 790319,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/1017/10173628/1416-crucial-mx500-ssd-4tb-sata3.jpg",
+        "slug": "https://www.pccomponentes.com/crucial-mx500-ssd-4tb-sata3"
+    },
+    {
+        "name": "Lenovo ThinkSystem 5300 M.2 SSD 240GB SATA 3",
+        "price": "447",
+        "category": "Discos Duros",
+        "id_data": 501384,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/38/386438/1783-lenovo-thinksystem-5300-m2-ssd-240gb-sata-3.jpg",
+        "slug": "https://www.pccomponentes.com/lenovo-thinksystem-5300-m2-ssd-240gb-sata-3"
+    },
+    {
+        "name": "Transcend JetDrive 855 SSD 960GB Thunderbolt",
+        "price": "446.28",
+        "category": "Discos Duros",
+        "id_data": 867689,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/59/590874/1689-transcend-jetdrive-855-ssd-960gb-thunderbolt.jpg",
+        "slug": "https://www.pccomponentes.com/transcend-jetdrive-855-ssd-960gb-thunderbolt"
+    },
+    {
+        "name": "WD My Passport SSD 1 TB USB 3.1/Tipo-C",
+        "price": "446.01",
+        "category": "Discos Duros",
+        "id_data": 403932,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/18/186786/1350920.jpg",
+        "slug": "https://www.pccomponentes.com/wd-my-passport-ssd-1-tb-usb-31-tipo-c"
+    },
+    {
+        "name": "G-Technology SSD NVMe 2TB con Cifrado ArmorLock USB-C Negro/Amarillo",
+        "price": "445.99",
+        "category": "Discos Duros",
+        "id_data": 939122,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/36/363971/1777-g-technology-ssd-nvme-2tb-con-cifrado-armorlock-usb-c-negro-amarillo.jpg",
+        "slug": "https://www.pccomponentes.com/g-technology-ssd-nvme-2tb-con-cifrado-armorlock-usb-c-negro-amarillo"
+    },
+    {
+        "name": "GoodRam IRDM PRO M.2 2TB SSD Heatsink PCIe 4x4 NVMe",
+        "price": "444.94",
+        "category": "Discos Duros",
+        "id_data": 398521,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/1027/10274538/1966-goodram-irdm-pro-m2-2tb-ssd-heatsink-pcie-4x4-nvme.jpg",
+        "slug": "https://www.pccomponentes.com/goodram-irdm-pro-m2-2tb-ssd-heatsink-pcie-4x4-nvme"
+    },
+    {
+        "name": "MSI Spatium M480 HeatSink SSD 2TB M.2 2280-S2-M NVMe PCIe",
+        "price": "396.89",
+        "category": "Discos Duros",
+        "id_data": 972871,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/51/514069/161-msi-spatium-m480-ssd-2tb-m2-2280-s2-m-nvme-pcie.jpg",
+        "slug": "https://www.pccomponentes.com/msi-spatium-m480-heatsink-ssd-2tb-m2-2280-s2-m-nvme-pcie"
+    },
+    {
+        "name": "MSI Spatium M390 500GB SSD NVMe M.2",
+        "price": "74.87",
+        "category": "Discos Duros",
+        "id_data": 955237,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/62/624922/1989-msi-spatium-m390-500gb-ssd-nvme-m2.jpg",
+        "slug": "https://www.pccomponentes.com/msi-spatium-m390-500gb-ssd-nvme-m2"
+    },
+    {
+        "name": "Samsung T7 Disco Duro SSD PCIe NVMe USB 3.2 1TB Azul",
+        "price": "136.88",
+        "category": "Discos Duros",
+        "id_data": 211135,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/33/330741/14-samsung-t7-disco-duro-ssd-pcie-nvme-usb-32-1tb-azul.jpg",
+        "slug": "https://www.pccomponentes.com/samsung-t7-disco-duro-ssd-pcie-nvme-usb-32-1tb-azul"
+    },
+    {
+        "name": "Crucial BX500 SSD 480GB 3D NAND SATA3",
+        "price": "50.72",
+        "category": "Discos Duros",
+        "id_data": 426961,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/16/169776/5b7245fen9b00f58b.jpg",
+        "slug": "https://www.pccomponentes.com/crucial-bx500-ssd-480gb-3d-nand-sata3"
+    },
+    {
+        "name": "Corsair MP600 PRO 2TB M.2 NVMe PCIe Gen 4 x4 SSD",
+        "price": "359.41",
+        "category": "Discos Duros",
+        "id_data": 478382,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/357144/1603-corsair-mp600-pro-2tb-m2-nvme-pcie-gen-4-x4-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-mp600-pro-2tb-m2-nvme-pcie-gen-4-x4-ssd"
+    },
+    {
+        "name": "PNY XLR8 CS3140 SSD 2TB M.2 NVMe Gen4",
+        "price": "418.07",
+        "category": "Discos Duros",
+        "id_data": 826967,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/357425/1837-pny-xlr8-cs3140-ssd-2tb-m2-nvme-gen4.jpg",
+        "slug": "https://www.pccomponentes.com/pny-xlr8-cs3140-ssd-2tb-m2-nvme-gen4"
+    },
+    {
+        "name": "PNY CS900 500GB SSD M.2 SATA III",
+        "price": "63.53",
+        "category": "Discos Duros",
+        "id_data": 367186,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/32/326652/1842-pny-cs900-500gb-ssd-m2-sata-iii.jpg",
+        "slug": "https://www.pccomponentes.com/pny-cs900-500gb-ssd-m2-sata-iii"
+    },
+    {
+        "name": "Samsung 870 EVO SSD 2.5\" 2TB SATA3 Negro",
+        "price": "251.6",
+        "category": "Discos Duros",
+        "id_data": 705461,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/350361/1556-samsung-870-qvo-ssd-25-2tb-sata3-negro.jpg",
+        "slug": "https://www.pccomponentes.com/samsung-870-evo-ssd-25-2tb-sata3-negro"
+    },
+    {
+        "name": "Corsair MP600 Force Series 1TB SSD M.2 PCIe Gen 4.0 x4 V2",
+        "price": "157.59",
+        "category": "Discos Duros",
+        "id_data": 342958,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/82/823384/1265-corsair-mp600-force-series-1tb-ssd-m2-pcie-gen-40-x4-v2.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-mp600-force-series-1tb-ssd-m2-pcie-gen-40-x4-v2"
+    },
+    {
+        "name": "Team Group MP33 PRO 1 TB SSD M.2 PCIe Gen3 x4",
+        "price": "113.68",
+        "category": "Discos Duros",
+        "id_data": 849690,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/58/589367/1384-team-group-mp33-pro-1-tb-ssd-m2-pcie-gen3-x4.jpg",
+        "slug": "https://www.pccomponentes.com/team-group-mp33-pro-1-tb-ssd-m2-pcie-gen3-x4"
+    },
+    {
+        "name": "WD BLACK SN750 1TB SE NVMe SSD",
+        "price": "114.36",
+        "category": "Discos Duros",
+        "id_data": 226762,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/57/571972/1594-wd-black-sn750-1tb-se-nvme-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-sn750-1tb-se-nvme-ssd"
+    },
+    {
+        "name": "Corsair MP600 CORE 1TB M.2 NVMe PCIe Gen 4 x4 SSD",
+        "price": "154.21",
+        "category": "Discos Duros",
+        "id_data": 336981,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/37/377294/1842-corsair-mp600-core-1tb-m2-nvme-pcie-gen-4-x4-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-mp600-core-1tb-m2-nvme-pcie-gen-4-x4-ssd"
+    },
+    {
+        "name": "Crucial BX500 SSD 1TB 3D NAND SATA3",
+        "price": "93.02",
+        "category": "Discos Duros",
+        "id_data": 521689,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/30/307638/1761-crucial-bx500-ssd-1tb-3d-nand-sata3.jpg",
+        "slug": "https://www.pccomponentes.com/crucial-bx500-ssd-1tb-3d-nand-sata3"
+    },
+    {
+        "name": "WD Black SN850 2TB SSD NVMe M.2 PCIe 4.0 sin Disipador Termico",
+        "price": "324.21",
+        "category": "Discos Duros",
+        "id_data": 286585,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/32/328712/1140-wd-black-sn850-2tb-ssd-m2-2280-3d-nand-sin-disipador-termico.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-sn850-2tb-ssd-nvme-m2-pcie-40-sin-disipador-termico"
+    },
+    {
+        "name": "Crucial BX500 SSD 240GB 3D NAND SATA3",
+        "price": "39.85",
+        "category": "Discos Duros",
+        "id_data": 204808,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/16/169775/5b7245fen9b00f58b.jpg",
+        "slug": "https://www.pccomponentes.com/crucial-bx500-ssd-240gb-3d-nand-sata3"
+    },
+    {
+        "name": "Samsung T7 Disco Duro SSD PCIe NVMe USB 3.2 2TB Azul",
+        "price": "241.12",
+        "category": "Discos Duros",
+        "id_data": 551159,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/33/330738/1714-samsung-t7-disco-duro-ssd-pcie-nvme-usb-32-2tb-azul.jpg",
+        "slug": "https://www.pccomponentes.com/samsung-t7-disco-duro-ssd-pcie-nvme-usb-32-2tb-azul"
+    },
+    {
+        "name": "GoodRam PX500 SSD 1 TB M.2 PCIe GEN 3 X4 NVMe",
+        "price": "109.54",
+        "category": "Discos Duros",
+        "id_data": 248728,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/32/324595/1215-goodram-px500-ssd-1-tb-m2-pcie-gen-3-x4-nvme-caracteristicas.jpg",
+        "slug": "https://www.pccomponentes.com/goodram-px500-ssd-1-tb-m2-pcie-gen-3-x4-nvme"
+    },
+    {
+        "name": "MSI Spatium M480 HeatSink SSD 1TB M.2 2280-S2-M NVMe PCIe",
+        "price": "209.85",
+        "category": "Discos Duros",
+        "id_data": 728777,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/51/514072/1293-msi-spatium-m480-heatsink-ssd-1tb-m2-2280-s2-m-nvme-pcie.jpg",
+        "slug": "https://www.pccomponentes.com/msi-spatium-m480-heatsink-ssd-1tb-m2-2280-s2-m-nvme-pcie"
+    },
+    {
+        "name": "HP EX900 500GB NVMe 2280 M.2",
+        "price": "72.2",
+        "category": "Discos Duros",
+        "id_data": 473702,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/19/192943/1.jpg",
+        "slug": "https://www.pccomponentes.com/hp-ex900-500gb-nvme-2280-m2"
+    },
+    {
+        "name": "XLR8 CS3140 M.2 SSD 2TB NVMe Gen4 with Heatsink",
+        "price": "428.26",
+        "category": "Discos Duros",
+        "id_data": 397134,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/357429/1605-xlr8-cs3140-m2-ssd-2tb-nvme-gen4-with-heatsink.jpg",
+        "slug": "https://www.pccomponentes.com/xlr8-cs3140-m2-ssd-2tb-nvme-gen4-with-heatsink"
+    },
+    {
+        "name": "WD BLACK SN770 1TB NVMe SSD",
+        "price": "169.42",
+        "category": "Discos Duros",
+        "id_data": 173874,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/1006/10060346/1242-wd-black-sn770-1tb-nvme-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-sn770-1tb-nvme-ssd"
+    },
+    {
+        "name": "WD Black SN750 NVMe 500GB SSD M.2 PCI Express 3.0 con Disipador Termico",
+        "price": "107.44",
+        "category": "Discos Duros",
+        "id_data": 255897,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/20/208534/1.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-sn750-nvme-500gb-ssd-m2-pci-express-30-con-disipador-termico"
+    },
+    {
+        "name": "Seagate FireCuda 520 SSD 1TB M.2 PCIe 4.0 3D TLC NVMe",
+        "price": "180.3",
+        "category": "Discos Duros",
+        "id_data": 361787,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/30/304056/1824-seagate-firecuda-520-ssd-1tb-m2-pcie-40-3d-tlc-nvme-opiniones.jpg",
+        "slug": "https://www.pccomponentes.com/seagate-firecuda-520-ssd-1tb-m2-pcie-40-3d-tlc-nvme"
+    },
+    {
+        "name": "WD BLACK SN770 500GB NVMe SSD",
+        "price": "99.3",
+        "category": "Discos Duros",
+        "id_data": 478274,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/1006/10060345/1661-wd-black-sn770-500gb-nvme-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/wd-black-sn770-500gb-nvme-ssd"
+    },
+    {
+        "name": "Adata Ultimate SU630 480GB SSD",
+        "price": "58.91",
+        "category": "Discos Duros",
+        "id_data": 205522,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/27/278042/adata-ultimate-su630-480gb-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/adata-ultimate-su630-480gb-ssd"
+    },
+    {
+        "name": "HP EX900 1TB NVMe 2280 M.2",
+        "price": "123.44",
+        "category": "Discos Duros",
+        "id_data": 784778,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/19/192946/1.jpg",
+        "slug": "https://www.pccomponentes.com/hp-ex900-1tb-nvme-2280-m2"
+    },
+    {
+        "name": "Corsair Force MP510 M.2 NVMe PCIe Gen3 x4 480GB SSD",
+        "price": "82.9",
+        "category": "Discos Duros",
+        "id_data": 166764,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/27/279432/corsair-force-mp510-m2-nvme-pcie-gen3-x4-480gb-ssd.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-force-mp510-m2-nvme-pcie-gen3-x4-480gb-ssd"
+    },
+    {
+        "name": "Intel Consumer SSD 660p 2TB NVMe M.2 PCI Express 3.0",
+        "price": "281.86",
+        "category": "Discos Duros",
+        "id_data": 714839,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/18/182425/1.jpg",
+        "slug": "https://www.pccomponentes.com/intel-consumer-ssd-660p-2tb-nvme-m2-pci-express-30"
+    },
+    {
+        "name": "Kingston NV1 Disco SSD 2TB PCIe NVMe",
+        "price": "165.18",
+        "category": "Discos Duros",
+        "id_data": 458873,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/39/390993/1130-kingston-nv1-disco-ssd-2tb-pcie-nvme-especificaciones.jpg",
+        "slug": "https://www.pccomponentes.com/kingston-nv1-disco-ssd-2tb-pcie-nvme"
+    },
+    {
+        "name": "WD Blue SN550 2TB SSD PCIe NVMe",
+        "price": "229.72",
+        "category": "Discos Duros",
+        "id_data": 212065,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/37/376628/1233-wd-blue-sn550-2tb-ssd-pcie-nvme.jpg",
+        "slug": "https://www.pccomponentes.com/wd-blue-sn550-2tb-ssd-pcie-nvme"
+    },
+    {
+        "name": "Corsair MP600 PRO XT SSD 1TB Gen4 PCIe x4 NVMe M.2",
+        "price": "221.81",
+        "category": "Discos Duros",
+        "id_data": 232787,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/57/574282/17-corsair-mp600-pro-xt-ssd-1tb-gen4-pcie-x4-nvme-m2-foto.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-mp600-pro-xt-ssd-1tb-gen4-pcie-x4-nvme-m2"
+    },
+    {
+        "name": "Corsair MP600 PRO 2TB M.2 NVMe PCIe Gen 4 x4 Hydro X Ed. SSD",
+        "price": "436.52",
+        "category": "Discos Duros",
+        "id_data": 843136,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/357145/1564-corsair-mp600-pro-2tb-m2-nvme-pcie-gen-4-x4-hydro-x-ed-ssd-4eba8a55-1735-469b-a5f8-48ca595559ab.jpg",
+        "slug": "https://www.pccomponentes.com/corsair-mp600-pro-2tb-m2-nvme-pcie-gen-4-x4-hydro-x-ed-ssd"
+    },
+    {
+        "name": "Team Group Cardea II TUF Gaming Alliance SSD 512GB M.2 PCIe",
+        "price": "89.42",
+        "category": "Discos Duros",
+        "id_data": 672354,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/31/310532/1159-team-group-cardea-ii-tuf-gaming-alliance-ssd-512gb-m2-pcie-especificaciones.jpg",
+        "slug": "https://www.pccomponentes.com/team-group-cardea-ii-tuf-gaming-alliance-ssd-512gb-m2-pcie"
+    },
+    {
+        "name": "XLR8 CS3140 M.2 SSD 1TB NVMe Gen4 with Heatsink",
+        "price": "225.97",
+        "category": "Discos Duros",
+        "id_data": 467614,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/35/357428/1433-xlr8-cs3140-m2-ssd-1tb-nvme-gen4-with-heatsink.jpg",
+        "slug": "https://www.pccomponentes.com/xlr8-cs3140-m2-ssd-1tb-nvme-gen4-with-heatsink"
+    },
+    {
+        "name": "Western Digital Blue 3D Nand SATA SSD M.2 2280 500GB",
+        "price": "68.76",
+        "category": "Discos Duros",
+        "id_data": 226632,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/14/140844/1408440.jpg",
+        "slug": "https://www.pccomponentes.com/western-digital-blue-3d-nand-sata-ssd-m2-2280-500gb"
+    },
+    {
+        "name": "WD Blue 3D Nand SSD M.2 1TB SATA3",
+        "price": "115.75",
+        "category": "Discos Duros",
+        "id_data": 949645,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/14/149907/g1.jpg",
+        "slug": "https://www.pccomponentes.com/wd-blue-3d-nand-ssd-m2-1tb-sata3"
+    },
+    {
+        "name": "PNY CS900 2.5\" 240GB SSD SATA 3 TLC",
+        "price": "35.28",
+        "category": "Discos Duros",
+        "id_data": 372080,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/21/212131/1.jpg",
+        "slug": "https://www.pccomponentes.com/pny-cs900-25-240gb-ssd-sata-3-tlc"
+    },
+    {
+        "name": "Kingston KC3000 SSD 1TB M.2 PCIe 4.0 NVMe",
+        "price": "164.05",
+        "category": "Discos Duros",
+        "id_data": 717502,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/73/737076/1246-kingston-kc3000-ssd-1tb-m2-pcie-40-nvme.jpg",
+        "slug": "https://www.pccomponentes.com/kingston-kc3000-ssd-1tb-m2-pcie-40-nvme"
+    },
+    {
+        "name": "Sandisk Ultra 3D SSD 500GB SATA3",
+        "price": "80.2",
+        "category": "Discos Duros",
+        "id_data": 326802,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/14/143408/1434080.jpg",
+        "slug": "https://www.pccomponentes.com/sandisk-ultra-3d-ssd-500gb-sata3"
+    },
+    {
+        "name": "PNY CS900 2.5\" 120GB SSD SATA 3 TLC",
+        "price": "24.01",
+        "category": "Discos Duros",
+        "id_data": 616311,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/21/212123/1.jpg",
+        "slug": "https://www.pccomponentes.com/pny-cs900-25-120gb-ssd-sata-3-tlc"
+    },
+    {
+        "name": "MSI Spatium M480 HeatSink SSD 2TB M.2 2280-S2-M NVMe PCIe",
+        "price": "381.97",
+        "category": "Discos Duros",
+        "id_data": 576276,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/51/514069/161-msi-spatium-m480-ssd-2tb-m2-2280-s2-m-nvme-pcie.jpg",
+        "slug": "https://www.pccomponentes.com/msi-spatium-m480-heatsink-ssd-2tb-m2-2280-s2-m-nvme-pcie"
+    },
+    {
+        "name": "Intenso Top SSD 512 GB SATA3",
+        "price": "56.1",
+        "category": "Discos Duros",
+        "id_data": 972942,
+        "img": "https://thumb.pccomponentes.com/w-140-140/articles/6/66583/intenso-top-ssd-512gb-sata3.jpg",
+        "slug": "https://www.pccomponentes.com/intenso-top-ssd-512-gb-sata3"
+    }
+]
