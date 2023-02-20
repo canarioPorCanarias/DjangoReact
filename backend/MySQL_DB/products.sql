@@ -1,118 +1,8 @@
--- phpMyAdmin SQL Dump
--- version 5.1.3
--- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 26, 2022 at 06:13 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.28
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `pfc`
+-- Dumping data for table `Products_products`
 --
 
--- --------------------------------------------------------
-
---
--- Table structure for table `categories`
---
-
-CREATE TABLE `categories` (
-  `id` int(10) NOT NULL,
-  `categories` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `categories`
---
-
-INSERT INTO `categories` (`id`, `categories`) VALUES
-(1, 'Monitores'),
-(2, 'Procesadores'),
-(3, 'Tarjetas Graficas'),
-(4, 'portatiles'),
-(5, 'Torres ATX'),
-(6, 'sobremesa'),
-(7, 'Placas Base'),
-(8, 'Memorias RAM'),
-(9, 'Discos Duros');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contactus`
---
-
-CREATE TABLE `contactus` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(200) NOT NULL,
-  `text` text NOT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `orders`
---
-
-CREATE TABLE `orders` (
-  `id` int(11) NOT NULL,
-  `cart` text NOT NULL,
-  `price` float NOT NULL,
-  `status` enum('success','pending','error','canceled') NOT NULL DEFAULT 'pending',
-  `ethAddress` varchar(50) DEFAULT NULL,
-  `hash` varchar(100) NOT NULL,
-  `text` text NOT NULL,
-  `create_date` timestamp NOT NULL DEFAULT current_timestamp(),
-  `last_update_date` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `payments`
---
-
-CREATE TABLE `payments` (
-  `id` int(11) NOT NULL,
-  `ammount` float NOT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp(),
-  `order_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
-
-CREATE TABLE `products` (
-  `id` int(20) NOT NULL,
-  `img` varchar(177) NOT NULL,
-  `name` varchar(91) NOT NULL,
-  `price` int(10) NOT NULL,
-  `rating` int(5) DEFAULT 3,
-  `slug` varchar(200) NOT NULL,
-  `category` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (66583, '//thumb.pccomponentes.com/w-140-140/articles/6/66583/intenso-top-ssd-512gb-sata3.jpg', 'Intenso Top SSD 512 GB SATA3', 56, 3, '/intenso-top-ssd-512-gb-sata3', 'Discos Duros'),
 (74569, '//thumb.pccomponentes.com/w-220-220/articles/7/74569/1.jpg', 'LG 17MB15T 17 LED Tactil', 367, 3, '/monitor-lg-17mb15t-17-led-tactil-touch', 'Monitores'),
 (100186, '//thumb.pccomponentes.com/w-140-140/articles/37/376628/1233-wd-blue-sn550-2tb-ssd-pcie-nvme.jpg', 'WD Blue SN550 2TB SSD PCIe NVMe', 230, 3, '/wd-blue-sn550-2tb-ssd-pcie-nvme', 'Discos Duros'),
@@ -369,7 +259,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (254492, '//thumb.pccomponentes.com/w-220-220/articles/25/254492/phanteks-enthoo-luxe-ii-rgb-cristal-templado-usb-31-negra-41f6df05-b448-48bc-a4f3-a6faf579999f.jpg', 'Phanteks Enthoo Luxe II RGB Cristal Templado USB 3.1 Negra', 222, 3, '/phanteks-enthoo-luxe-ii-rgb-cristal-templado-usb-31-negra', 'Torres ATX'),
 (254501, '//thumb.pccomponentes.com/w-220-220/articles/25/254501/phanteks-enthoo-luxe-ii-rgb-cristal-templado-usb-31-gris-e3f4bd39-f700-43e8-9281-0b29a910bb55.jpg', 'Phanteks Enthoo Luxe II RGB Cristal Templado USB 3.1 Gris', 213, 3, '/phanteks-enthoo-luxe-ii-rgb-cristal-templado-usb-31-gris', 'Torres ATX'),
 (255914, '//thumb.pccomponentes.com/w-220-220/articles/25/255914/hp-z32-315-led-ips-ultrahd-4k-0b34c20f-0cc2-4e05-8d9c-4dde90552ac6.jpg', 'HP Z32 31.5 LED IPS UltraHD 4K', 1146, 3, '/hp-z32-315-led-ips-ultrahd-4k', 'Monitores');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (255948, '//thumb.pccomponentes.com/w-220-220/articles/25/255948/benq-ew3280u-32-led-ips-ultrahd-4k-hdri-freesync-89b13996-84e4-40e9-83d2-4bd8f15fadbb.jpg', 'BenQ EW3280U 32 LED IPS UltraHD 4K HDRi FreeSync', 712, 3, '/benq-ew3280u-32-led-ips-ultrahd-4k-hdri-freesync', 'Monitores'),
 (255952, '//thumb.pccomponentes.com/w-220-220/articles/25/255952/benq-ew2780u-27-led-ips-ultrahd-4k-hdri-b848fbcf-4052-446a-90ed-6169e0fc4102.jpg', 'BenQ EW2780U 27 LED IPS UltraHD 4K HDRi', 450, 3, '/benq-ew2780u-27-led-ips-ultrahd-4k-hdri', 'Monitores'),
 (256114, '//thumb.pccomponentes.com/w-220-220/articles/25/256114/benq-sw321c-32-led-ultrahd-4k-d441e974-fead-4cc1-8067-b7859a4deb3f.jpg', 'BenQ SW321C*32 LED UltraHD 4K', 1799, 3, '/benq-sw321c-32-led-ultrahd-4k', 'Monitores'),
@@ -596,7 +486,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (309026, '//thumb.pccomponentes.com/w-220-220/articles/30/309026/1480-hpe-kit-intel-xeon-silver-4214r-24-ghz-para-hpe-proliant-ml350-gen10.jpg', 'HPE Kit Intel Xeon-Silver 4214R 2.4 GHz para HPE ProLiant ML350 Gen10', 911, 3, '/hpe-kit-intel-xeon-silver-4214r-24-ghz-para-hpe-proliant-ml350-gen10', 'Procesadores'),
 (309561, '//thumb.pccomponentes.com/w-220-220/articles/30/309561/1250-lian-li-dk-05f-cristal-templado-usb-30.jpg', 'Lian Li DK-05F Cristal Templado USB 3.0', 1820, 3, '/lian-li-dk-05f-cristal-templado-usb-30', 'Torres ATX'),
 (309682, '//thumb.pccomponentes.com/w-220-220/articles/30/309682/1125-asrock-b550-taichi.jpg', 'Asrock B550 Taichi', 263, 3, '/asrock-b550-taichi', 'Placas Base');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (309784, '//thumb.pccomponentes.com/w-220-220/articles/30/309784/1813-asus-tuf-gaming-gt501-rgb-cristal-templado-usb-30-blanca.jpg', 'Asus TUF Gaming GT501 RGB Cristal Templado USB 3.0 Blanca', 213, 3, '/asus-tuf-gaming-gt501-rgb-cristal-templado-usb-30-blanca', 'Torres ATX'),
 (309947, '//thumb.pccomponentes.com/w-220-220/articles/30/309947/1642-asrock-b550-pro4.jpg', 'AsRock B550 PRO4', 126, 3, '/asrock-b550-pro4', 'Placas Base'),
 (310171, '//thumb.pccomponentes.com/w-220-220/articles/31/310171/hp-omen-x-27-27-led-quadhd-hdr-240hz-freesync.jpg', 'HP OMEN X 27 27 LED QuadHD HDR 240Hz FreeSync Reacondicionado', 412, 3, '/hp-omen-x-27-27-led-quadhd-hdr-240hz-freesync-reacondicionado', 'Monitores'),
@@ -795,7 +685,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (348565, '//thumb.pccomponentes.com/w-220-220/articles/34/348565/16-zotac-gaming-geforce-rtx-3090-trinity-oc-24gb-gddr6x.jpg', 'Zotac Gaming GeForce RTX 3090 Trinity OC LHR 24GB GDDR6X', 2053, 3, '/zotac-gaming-geforce-rtx-3090-trinity-oc-lhr-24gb-gddr6x', 'Tarjetas Graficas'),
 (349632, '//thumb.pccomponentes.com/w-220-220/articles/34/349632/1705-corsair-5000d-airflow-torre-atx-blanca.jpg', 'Corsair 5000D Airflow Torre ATX Blanca', 213, 3, '/corsair-5000d-airflow-torre-atx-blanca', 'Torres ATX'),
 (349819, '//thumb.pccomponentes.com/w-220-220/articles/34/349819/1943-asus-rog-strix-geforce-rtx-3090-white-24gb-gddr6.jpg', 'Asus ROG Strix GeForce RTX 3090 White 24GB GDDR6', 2270, 3, '/asus-rog-strix-geforce-rtx-3090-white-24gb-gddr6', 'Tarjetas Graficas');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (350025, '//thumb.pccomponentes.com/w-140-140/articles/35/350025/1998-asus-tuf-gaming-dash-f15-fx516pr-hn002-intel-core-i7-11370h-16gb-512gb-ssd-rtx-3070-156.jpg', 'Asus TUF Gaming Dash F15 FX516PR-HN002 Intel Core i7-11370H/16GB/512GB SSD/RTX 3070/15.6\"', 1499, 4, '/asus-tuf-gaming-dash-f15-fx516pr-hn002-intel-core-i7-11370h-16gb-512gb-ssd-rtx-3070-156', 'portatiles'),
 (350030, '//thumb.pccomponentes.com/w-220-220/articles/35/350030/1498-gigabyte-aorus-radeon-rx-6800-master-16gb-gddr6.jpg', 'Gigabyte AORUS Radeon RX 6800 MASTER 16GB GDDR6', 1848, 3, '/gigabyte-aorus-radeon-rx-6800-master-16gb-gddr6', 'Tarjetas Graficas'),
 (350036, '//thumb.pccomponentes.com/w-220-220/articles/35/350036/1215-gigabyte-aorus-radeon-rx-6800-xt-master-type-c-16gb-gddr6.jpg', 'Gigabyte AORUS Radeon RX 6800 XT MASTER TYPE C 16GB GDDR6', 1663, 3, '/gigabyte-aorus-radeon-rx-6800-xt-master-type-c-16gb-gddr6', 'Tarjetas Graficas'),
@@ -1005,7 +895,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (380151, '//thumb.pccomponentes.com/w-220-220/articles/38/380151/1552-asus-prime-h510m-d.jpg', 'Asus PRIME H510M-D', 84, 3, '/asus-prime-h510m-d', 'Placas Base'),
 (380161, '//thumb.pccomponentes.com/w-220-220/articles/38/380161/1342-asus-prime-h570-plus.jpg', 'Asus PRIME H570-PLUS', 171, 3, '/asus-prime-h570-plus', 'Placas Base'),
 (380164, '//thumb.pccomponentes.com/w-220-220/articles/38/380164/1859-asus-tuf-gaming-h570-pro.jpg', 'Asus TUF GAMING H570-PRO', 248, 3, '/asus-tuf-gaming-h570-pro', 'Placas Base');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (380445, '//thumb.pccomponentes.com/w-220-220/articles/38/380445/11-asus-rog-strix-xg17ahp-173-led-ips-fullhd-240hz-portatil.jpg', 'Asus ROG Strix XG17AHP 17.3 LED IPS FullHD 240Hz Portatil', 777, 3, '/asus-rog-strix-xg17ahp-173-led-ips-fullhd-240hz-portatil', 'Monitores'),
 (382056, '//thumb.pccomponentes.com/w-220-220/articles/38/382056/1418-asrock-z590-pro4.jpg', 'AsRock Z590 PRO4', 173, 3, '/asrock-z590-pro4', 'Placas Base'),
 (382060, '//thumb.pccomponentes.com/w-220-220/articles/38/382060/1568-asrock-h470m-hdv.jpg', 'AsRock H470M-HDV', 82, 3, '/asrock-h470m-hdv', 'Placas Base'),
@@ -1209,7 +1099,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (409759, '//thumb.pccomponentes.com/w-220-220/articles/40/409759/1825-zotac-gaming-geforce-rtx-3080-ti-trinity-oc-12gb-gddr6x.jpg', 'Zotac Gaming GeForce RTX 3080 Ti Trinity OC LHR  12GB GDDR6X', 1455, 3, '/zotac-gaming-geforce-rtx-3080-ti-trinity-oc-lhr-12gb-gddr6x', 'Tarjetas Graficas'),
 (410449, '//thumb.pccomponentes.com/w-220-220/articles/41/410449/1866-acer-conceptd-cm2241w-24-led-ips-wuxga-75hz-opiniones.jpg', 'Acer ConceptD CM2241W 24 LED IPS WUXGA 75Hz', 375, 3, '/acer-conceptd-cm2241w-24-led-ips-wuxga-75hz', 'Monitores'),
 (410806, '//thumb.pccomponentes.com/w-220-220/articles/41/410806/1939-philips-325b1l-315-led-ips-quadhd-75hz.jpg', 'Philips 325B1L 31.5 LED IPS QuadHD 75Hz', 426, 3, '/philips-325b1l-315-led-ips-quadhd-75hz', 'Monitores');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (411297, '//thumb.pccomponentes.com/w-220-220/articles/41/411297/1419-evga-geforce-rtx-3080-ti-ftw3-ultra-12gb-gddr6x.jpg', 'EVGA GeForce RTX 3080 Ti FTW3 ULTRA 12GB GDDR6X', 1651, 3, '/evga-geforce-rtx-3080-ti-ftw3-ultra-12gb-gddr6x', 'Tarjetas Graficas'),
 (411342, '//thumb.pccomponentes.com/w-220-220/articles/41/411342/1153-msi-rtx-3080-ti-gaming-x-trio-12gb-gddr6x.jpg', 'MSI RTX 3080 Ti GAMING X TRIO 12GB GDDR6X', 1662, 3, '/msi-rtx-3080-ti-gaming-x-trio-12gb-gddr6x', 'Tarjetas Graficas'),
 (411443, '//thumb.pccomponentes.com/w-140-140/articles/41/411443/1551-medion-akoya-s15449-md62127-intel-core-i5-1135g7-8gb-512gb-ssd-156.jpg', 'Medion Akoya S15449-MD62127 Intel Core i5-1135G7/8GB/512GB SSD/15.6\"', 549, 4, '/medion-akoya-s15449-md62127-intel-core-i5-1135g7-8gb-512gb-ssd-156', 'portatiles'),
@@ -1391,7 +1281,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (514096, '//thumb.pccomponentes.com/w-140-140/articles/51/514096/1100-asus-tuf-gaming-f15-fx506hm-hn016-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3060-156.jpg', 'Asus TUF Gaming F15 FX506HM-HN016 Intel Core i5-11400H/16GB/512GB SSD/RTX 3060/15.6\"', 1089, 5, '/asus-tuf-gaming-f15-fx506hm-hn016-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3060-156', 'portatiles'),
 (514233, '//thumb.pccomponentes.com/w-140-140/articles/51/514233/161-wd-my-passport-ssd-4tb-usb-c-gris.jpg', 'WD My Passport SSD 4TB USB-C Gris', 546, 3, '/wd-my-passport-ssd-4tb-usb-c-gris', 'Discos Duros'),
 (514369, '//thumb.pccomponentes.com/w-220-220/articles/51/514369/1320-lg-gaming-ultragear-27gn850-b-27-led-ips-fullhd-144hz-g-sync-compatible.jpg', 'LG Gaming UltraGear 27GN850-B 27 LED IPS FullHD 144Hz G-Sync Compatible', 436, 3, '/lg-gaming-ultragear-27gn850-b-27-led-ips-fullhd-144hz-g-sync-compatible', 'Monitores');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (514646, '//thumb.pccomponentes.com/w-220-220/articles/51/514646/1610-nzxt-n7-z590-w1.jpg', 'NZXT N7 Z590-W1', 285, 3, '/nzxt-n7-z590-w1', 'Placas Base'),
 (514650, '//thumb.pccomponentes.com/w-220-220/articles/51/514650/1952-zotac-geforce-rtx-3090-amp-extreme-holo-24gb-gddr6x.jpg', 'Zotac GeForce RTX 3090 AMP Extreme Holo LHR 24GB GDDR6X', 2844, 3, '/zotac-geforce-rtx-3090-amp-extreme-holo-lhr-24gb-gddr6x', 'Tarjetas Graficas'),
 (514656, '//thumb.pccomponentes.com/w-220-220/articles/51/514656/1315-amd-ryzen-7-5700g-46ghz.jpg', 'AMD Ryzen 7 5700G 4.6GHz Reacondicionado', 300, 3, '/amd-ryzen-7-5700g-46ghz-reacondicionado', 'Procesadores'),
@@ -1582,7 +1472,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (625467, '//thumb.pccomponentes.com/w-220-220/articles/62/625467/1506-zone-evil-silver90-intel-core-i5-10600k-16gb-1tb-500gb-ssd-gtx-1660ti.jpg', 'Zone Evil Silver90 Intel Core i5-10600K/16GB/1TB+500GB SSD/GTX 1660Ti', 1578, 3, '/zone-evil-silver90-intel-core-i5-10600k-16gb-1tb-500gb-ssd-gtx-1660ti', 'Sobremesa'),
 (625475, '//thumb.pccomponentes.com/w-140-140/articles/62/625475/1581-corsair-dominator-platinum-rgb-ddr5-5200mhz-pc5-41600-32gb-2x16gb-cl38.jpg', 'Corsair Dominator Platinum RGB DDR5 5200MHz PC5-41600 32GB 2x16GB CL38', 483, 3, '/corsair-dominator-platinum-rgb-ddr5-5200mhz-pc5-41600-32gb-2x16gb-cl38', 'Memorias RAM'),
 (625881, '//thumb.pccomponentes.com/w-220-220/articles/62/625881/1681-zone-evil-gold84-intel-core-i7-11700-32gb-1tb-500gb-ssd-rtx-3060ti.jpg', 'Zone Evil Gold84 Intel Core i7-11700/32GB/1TB+500GB SSD/RTX 3060Ti', 1917, 3, '/zone-evil-gold84-intel-core-i7-11700-32gb-1tb-500gb-ssd-rtx-3060ti', 'Sobremesa');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (625909, '//thumb.pccomponentes.com/w-220-220/articles/62/625909/1432-zone-evil-diamond85-intel-core-i9-11900f-32gb-1tb-500gb-ssd-rtx-3060ti.jpg', 'Zone Evil Diamond85 Intel Core i9-11900F/32GB/1TB+500GB SSD/RTX 3060Ti', 1994, 3, '/zone-evil-diamond85-intel-core-i9-11900f-32gb-1tb-500gb-ssd-rtx-3060ti', 'Sobremesa'),
 (628964, '//thumb.pccomponentes.com/w-220-220/articles/62/628964/1463-zone-evil-silver86-intel-core-i5-10600k-16gb-1tb-500gb-ssd-gtx-1660ti.jpg', 'Zone Evil Silver86 Intel Core i5-10600K/16GB/1TB+500GB SSD/GTX 1660Ti', 1281, 3, '/zone-evil-silver86-intel-core-i5-10600k-16gb-1tb-500gb-ssd-gtx-1660ti', 'Sobremesa'),
 (628965, '//thumb.pccomponentes.com/w-220-220/articles/62/628965/1218-zone-evil-gold87-intel-core-i7-11700-16gb-1tb-500gb-ssd-gtx-1660ti.jpg', 'Zone Evil Gold87 Intel Core i7-11700/16GB/1TB+500GB SSD/GTX 1660Ti', 1476, 3, '/zone-evil-gold87-intel-core-i7-11700-16gb-1tb-500gb-ssd-gtx-1660ti', 'Sobremesa'),
@@ -1767,7 +1657,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (822089, '//thumb.pccomponentes.com/w-140-140/articles/82/822089/1417-lenovo-thinkbook-14-g2-itl-intel-core-i3-1115g4-8gb-256gb-ssd-14.jpg', 'Lenovo ThinkBook 14 G2 ITL Intel Core i3-1115G4/8GB/256GB SSD/14\"', 551, 4, '/lenovo-thinkbook-14-g2-itl-intel-core-i3-1115g4-8gb-256gb-ssd-14', 'portatiles'),
 (823180, '//thumb.pccomponentes.com/w-220-220/articles/82/823180/1602-millenium-machine-1s-skarner-amd-ryzen-9-3900-16gb-1tb-480gb-ssd-rtx-3070ti.jpg', 'Millenium Machine 1S Skarner AMD Ryzen 9 3900/16GB/1TB+480GB SSD/RTX 3070Ti', 2168, 3, '/millenium-machine-1s-skarner-amd-ryzen-9-3900-16gb-1tb-480gb-ssd-rtx-3070ti', 'Sobremesa'),
 (823206, '//thumb.pccomponentes.com/w-220-220/articles/82/823206/1660-hp-x34-34-led-ips-wqhd-165hz-freesync-premium.jpg', 'HP X34 34 LED IPS WQHD 165Hz FreeSync Premium', 399, 3, '/hp-x34-34-led-ips-wqhd-165hz-freesync-premium', 'Monitores');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (823211, '//thumb.pccomponentes.com/w-140-140/articles/82/823211/13-hp-15s-fq4028ns-intel-core-i5-1155g7-16gb-512gb-ssd-156.jpg', 'HP 15s-fq4028ns Intel Core i5-1155G7/16GB/512GB SSD/15.6\"', 749, 5, '/hp-15s-fq4028ns-intel-core-i5-1155g7-16gb-512gb-ssd-156', 'portatiles'),
 (823218, '//thumb.pccomponentes.com/w-140-140/articles/82/823218/156-hp-15s-eq1140ns-amd-3020e-4gb-128gb-ssd-156.jpg', 'HP 15S-eq1140ns AMD 3020e/4GB/128GB SSD/15.6\"', 349, 4, '/hp-15s-eq1140ns-amd-3020e-4gb-128gb-ssd-156', 'portatiles'),
 (823373, '//thumb.pccomponentes.com/w-220-220/articles/82/823373/1687-corsair-icue-5000x-rgb-ql-edition-cristal-templado-usb-31-blanca-9821f86f-cde0-4c09-a7cc-0dc5b699b011.jpg', 'Corsair iCUE 5000X RGB QL Edition Cristal Templado USB 3.1 Blanca', 319, 3, '/corsair-icue-5000x-rgb-ql-edition-cristal-templado-usb-31-blanca', 'Torres ATX'),
@@ -1868,7 +1758,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (973809, '//thumb.pccomponentes.com/w-140-140/articles/37/377294/1842-corsair-mp600-core-1tb-m2-nvme-pcie-gen-4-x4-ssd.jpg', 'Corsair MP600 CORE 1TB M.2 NVMe PCIe Gen 4 x4 SSD', 154, 3, '/corsair-mp600-core-1tb-m2-nvme-pcie-gen-4-x4-ssd', 'Discos Duros'),
 (981811, '//thumb.pccomponentes.com/w-140-140/articles/59/590673/1767-seagate-ironwolf-510-ssd-m2-192tb-3d-tlc-nas.jpg', 'Seagate IronWolf 510 SSD M.2 1.92TB 3D TLC NAS', 541, 3, '/seagate-ironwolf-510-ssd-m2-192tb-3d-tlc-nas', 'Discos Duros'),
 (982628, '//thumb.pccomponentes.com/w-140-140/articles/35/354741/111-kingston-data-center-dc500r-ssd-25-192tb-sata3-3d-tlc.jpg', 'Kingston Data Center DC500R SSD 2.5\" 1.92TB SATA3 3D TLC', 561, 3, '/kingston-data-center-dc500r-ssd-25-192tb-sata3-3d-tlc', 'Discos Duros'),
-(10001003, '//thumb.pccomponentes.com/w-140-140/articles/1000/10001003/1866-lenovo-ideapad-3-15ada-511-amd-ryzen-7-3700u-8gb-512gb-ssd-156-pt.jpg', 'Lenovo IdeaPad 3 15ADA-511 AMD Ryzen 7-3700U/8GB/512GB SSD/15.6\'\' (PT)', 587, 3, '/lenovo-ideapad-3-15ada-511-amd-ryzen-7-3700u-8gb-512gb-ssd-156-pt', 'portatiles'),
+(10001003, '//thumb.pccomponentes.com/w-140-140/articles/1000/10001003/1866-lenovo-ideapad-3-15ada-511-amd-ryzen-7-3700u-8gb-512gb-ssd-156-pt.jpg', 'Lenovo IdeaPad 3 15ADA-511 AMD Ryzen 7-3700U/8GB/512GB SSD/15.6 (PT)', 587, 3, '/lenovo-ideapad-3-15ada-511-amd-ryzen-7-3700u-8gb-512gb-ssd-156-pt', 'portatiles'),
 (10004331, '//thumb.pccomponentes.com/w-140-140/articles/1000/10004331/1174-synology-sat5210-960g-960gb-ssd-sata-3-comprar.jpg', 'Synology SAT5210-960G 960GB SSD SATA 3', 463, 3, '/synology-sat5210-960g-960gb-ssd-sata-3', 'Discos Duros'),
 (10005441, '//thumb.pccomponentes.com/w-220-220/articles/1000/10005441/1934-deepgaming-nostromo-intel-core-i9-11900f-32gb-4tb-2tb-ssd-gtx-1650.jpg', 'DeepGaming Nostromo Intel Core i9-11900F/32GB/4TB+2TB SSD/GTX 1650', 1832, 3, '/deepgaming-nostromo-intel-core-i9-11900f-32gb-4tb-2tb-ssd-gtx-1650', 'Sobremesa'),
 (10005794, '//thumb.pccomponentes.com/w-220-220/articles/1000/10005794/130-deepgaming-nostromo-intel-core-i9-11900f-32gb-2tb-1tb-ssd-gtx-1650.jpg', 'DeepGaming Nostromo Intel Core i9-11900F/32GB/2TB+1TB SSD/GTX 1650', 1657, 3, '/deepgaming-nostromo-intel-core-i9-11900f-32gb-2tb-1tb-ssd-gtx-1650', 'Sobremesa'),
@@ -1883,7 +1773,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (10009303, '//thumb.pccomponentes.com/w-220-220/articles/1000/10009303/1614-deepgaming-nostromo-intel-core-i9-11900f-64gb-1tb-ssd-gtx-1650.jpg', 'DeepGaming Nostromo Intel Core i9-11900F/64GB/1TB SSD/GTX 1650', 1791, 3, '/deepgaming-nostromo-intel-core-i9-11900f-64gb-1tb-ssd-gtx-1650', 'Sobremesa'),
 (10009581, '//thumb.pccomponentes.com/w-220-220/articles/1000/10009581/1264-iiyama-prolite-xub2792qsn-b1-27-led-ips-wqhd-75hz-usb-c.jpg', 'Iiyama ProLite XUB2792QSN-B1 27 LED IPS WQHD 75Hz USB-C', 411, 3, '/iiyama-prolite-xub2792qsn-b1-27-led-ips-wqhd-75hz-usb-c', 'Monitores'),
 (10009606, '//thumb.pccomponentes.com/w-220-220/articles/1000/10009606/1229-iiyama-prolite-xub2893uhsu-b1-28-led-ips-ultrahd-4k.jpg', 'Iiyama ProLite XUB2893UHSU-B1 28 LED IPS UltraHD 4K', 370, 3, '/iiyama-prolite-xub2893uhsu-b1-28-led-ips-ultrahd-4k', 'Monitores'),
-(10009770, '//thumb.pccomponentes.com/w-140-140/articles/1000/10009770/1112-hp-laptop-15s-eq2003np-amd-ryzen-5-5500u-12gb-512gb-ssd-156-pt.jpg', 'HP Laptop 15s-eq2003np AMD Ryzen 5-5500U/12GB/512GB SSD/15.6\'\' (PT)', 598, 3, '/hp-laptop-15s-eq2003np-amd-ryzen-5-5500u-12gb-512gb-ssd-156-pt', 'portatiles'),
+(10009770, '//thumb.pccomponentes.com/w-140-140/articles/1000/10009770/1112-hp-laptop-15s-eq2003np-amd-ryzen-5-5500u-12gb-512gb-ssd-156-pt.jpg', 'HP Laptop 15s-eq2003np AMD Ryzen 5-5500U/12GB/512GB SSD/15.6 (PT)', 598, 3, '/hp-laptop-15s-eq2003np-amd-ryzen-5-5500u-12gb-512gb-ssd-156-pt', 'portatiles'),
 (10010046, '//thumb.pccomponentes.com/w-220-220/articles/1001/10010046/1692-msi-mag-codex-5-11tc-460eu-intel-core-i5-11400f-16gb-512gb-ssd-rtx-3060.jpg', 'MSI MAG Codex 5 11TG-814EU Intel Core i5-11400F/16GB/512GB SSD/RTX 3060 Ti Reacondicionado', 1322, 3, '/msi-mag-codex-5-11tg-814eu-intel-core-i5-11400f16gb512gb-ssdrtx-3060-ti-reacondicionado', 'Sobremesa'),
 (10010900, '//thumb.pccomponentes.com/w-140-140/articles/1001/10010900/188-hp-pavilion-15-eg1004ns-intel-core-i7-1195g7-16gb-512gb-ssd-156.jpg', 'HP Pavilion 15-eg1004ns Intel Core i7-1195G7/16GB/512GB SSD/15.6\"', 969, 5, '/hp-pavilion-15-eg1004ns-intel-core-i7-1195g7-16gb-512gb-ssd-156', 'portatiles'),
 (10010902, '//thumb.pccomponentes.com/w-140-140/articles/1001/10010902/1755-hp-pavilion-14-ec0011ns-amd-ryzen-7-5700u-16gb-512gb-ssd-14.jpg', 'HP Pavilion 14-ec0011ns AMD Ryzen 7 5700U/16GB/512GB SSD/14\"', 889, 5, '/hp-pavilion-14-ec0011ns-amd-ryzen-7-5700u-16gb-512gb-ssd-14', 'portatiles'),
@@ -1956,7 +1846,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (10031022, '//thumb.pccomponentes.com/w-220-220/articles/1003/10031022/1734-gainward-geforce-rtx-3080-phoenix-12gb-gddr6x.jpg', 'Gainward GeForce RTX 3080 Phoenix 12GB GDDR6X', 1280, 3, '/gainward-geforce-rtx-3080-phoenix-12gb-gddr6x', 'Tarjetas Graficas'),
 (10032079, '//thumb.pccomponentes.com/w-220-220/articles/1003/10032079/1997-msi-mag-codex-x5-12te-1204xes-intel-core-i9-12900kf-32gb-2tb-ssd-rtx-3080.jpg', 'MSI MAG Codex X5 12TE-1204XES Intel Core i9-12900KF/32GB/2TB SSD/RTX 3080', 3699, 3, '/msi-mag-codex-x5-12te-1204xes-intel-core-i9-12900kf-32gb-2tb-ssd-rtx-3080', 'Sobremesa'),
 (10032082, '//thumb.pccomponentes.com/w-220-220/articles/1003/10032082/1796-msi-mag-codex-x5-12te-1205xes-intel-core-i7-12700kf-32gb-2tb-ssd-rtx-3080.jpg', 'MSI MAG Codex X5 12TE-1205XES Intel Core i7-12700KF/32GB/2TB SSD/RTX 3080', 3399, 3, '/msi-mag-codex-x5-12te-1205xes-intel-core-i7-12700kf-32gb-2tb-ssd-rtx-3080', 'Sobremesa');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (10033611, '//thumb.pccomponentes.com/w-220-220/articles/1003/10033611/111-ozone-dsp25-ultra-245-led-ips-fullhd-360hz-g-sync.jpg', 'Ozone DSP25 ULTRA 24.5 LED IPS FullHD 360Hz G-Sync Compatible', 679, 3, '/ozone-dsp25-ultra-245-led-ips-fullhd-360hz-g-sync-compatible', 'Monitores'),
 (10035540, '//thumb.pccomponentes.com/w-140-140/articles/1003/10035540/1673-hp-victus-16-d0054ns-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3050-161.jpg', 'HP Victus 16-d0054ns Intel Core i5-11400H/16GB/512GB SSD/RTX 3050/16.1\"', 969, 5, '/hp-victus-16-d0054ns-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3050-161', 'portatiles'),
 (10035542, '//thumb.pccomponentes.com/w-140-140/articles/1003/10035542/1150-msi-katana-gf66-11ue-067xes-intel-core-i7-11800h-16gb-512gb-ssd-rtx-3060-156.jpg', 'MSI Katana GF66 11UE-667XES Intel Core i7-11800H/8GB/512GB SSD/RTX 3060/15.6\"', 1499, 3, '/msi-katana-gf66-11ue-667xes-intel-core-i7-11800h-8gb-512gb-ssd-rtx-3060-156', 'portatiles'),
@@ -2129,7 +2019,7 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (10186277, '//thumb.pccomponentes.com/w-220-220/articles/1018/10186277/1910-megaport-pack-gaming-pc-amd-ryzen-5-5600g-16gb-500gb-ssd-monitor-24-led-fullhd-teclado-raton.jpg', 'Megaport Pack Gaming PC AMD Ryzen 5 5600G/16GB/500GB SSD + Monitor 24\" LED FullHD + Teclado', 899, 3, '/megaport-pack-gaming-pc-amd-ryzen-5-5600g-16gb-500gb-ssd-monitor-24-led-fullhd-teclado-raton', 'Sobremesa'),
 (10186279, '//thumb.pccomponentes.com/w-220-220/articles/1018/10186279/1725-megaport-pc-gaming-amd-ryzen-5-5600g-16gb-2tb-rtx-2060.jpg', 'Megaport PC Gaming AMD Ryzen 5 5600G/16GB/2TB/RTX 2060', 1179, 3, '/megaport-pc-gaming-amd-ryzen-5-5600g-16gb-2tb-rtx-2060', 'Sobremesa'),
 (10186283, '//thumb.pccomponentes.com/w-220-220/articles/1018/10186283/1295-megaport-pack-gaming-pc-amd-ryzen-5-3600-16gb-1tb-ssd-rtx-3060-ti-monitor-24-led-fullhd-teclado-raton.jpg', 'Megaport Pack Gaming PC AMD Ryzen 5 3600/16GB/1TB SSD/RTX 3060 Ti + Monitor 24\" LED FullHD ', 1649, 3, '/megaport-pack-gaming-pc-amd-ryzen-5-3600-16gb-1tb-ssd-rtx-3060-ti-monitor-24-led-fullhd-teclado-r', 'Sobremesa');
-INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `category`) VALUES
+INSERT INTO "Products_products" (id, img, name, price, rating, slug, category) VALUES
 (10186285, '//thumb.pccomponentes.com/w-220-220/articles/1018/10186285/1632-megaport-pc-gaming-amd-ryzen-5-5600g-16gb-500gb-ssd.jpg', 'Megaport PC Gaming AMD Ryzen 5 5600G/16GB/500GB SSD', 749, 3, '/megaport-pc-gaming-amd-ryzen-5-5600g-16gb-500gb-ssd', 'Sobremesa'),
 (10186289, '//thumb.pccomponentes.com/w-220-220/articles/1018/10186289/139-megaport-pc-gaming-amd-ryzen-5-3600-16gb-1tb-ssd-rtx-3050.jpg', 'Megaport PC Gaming AMD Ryzen 5 3600/16GB/1TB SSD/RTX 3050', 1169, 3, '/megaport-pc-gaming-amd-ryzen-5-3600-16gb-1tb-ssd-rtx-3050', 'Sobremesa'),
 (10186292, '//thumb.pccomponentes.com/w-220-220/articles/1018/10186292/1896-megaport-pc-gaming-amd-ryzen-5-5600g-16-gb-2tb-rtx-3060.jpg', 'Megaport PC Gaming AMD Ryzen 5 5600G/16 GB/2TB/RTX 3060', 1249, 3, '/megaport-pc-gaming-amd-ryzen-5-5600g-16-gb-2tb-rtx-3060', 'Sobremesa'),
@@ -2261,7 +2151,8 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (10262737, '//thumb.pccomponentes.com/w-220-220/articles/1026/10262737/1901-dell-p-series-p2723d-27-led-ips-qhd-usb-c.jpg', 'Dell P Series P2723D 27 LED IPS QHD USB-C', 483, 3, '/dell-p-series-p2723d-27-led-ips-qhd-usb-c', 'Monitores'),
 (10262743, '//thumb.pccomponentes.com/w-220-220/articles/1026/10262743/1195-dell-p-series-p3223de-315-led-ips-qhd-usb-c.jpg', 'Dell P Series P3223DE 31.5 LED IPS QHD USB-C', 585, 3, '/dell-p-series-p3223de-315-led-ips-qhd-usb-c', 'Monitores'),
 (10262744, '//thumb.pccomponentes.com/w-220-220/articles/1026/10262744/1655-dell-s2722qc-27-led-ips-ultrahd-4k-freesync-usb-c.jpg', 'Dell s2722qc 27 LED IPS UltraHD 4K FreeSync USB-C', 428, 3, '/dell-s2722qc-27-led-ips-ultrahd-4k-freesync-usb-c', 'Monitores'),
-(10266544, '//thumb.pccomponentes.com/w-220-220/articles/1026/10266544/1846-hp-omen-40l-gt21-0023np-intel-core-i7-12700f-32gb-512gb-ssd-rtx3060ti-pt.jpg', 'HP OMEN 40L GT21-0023np Intel Core i7-12700F/32GB/512GB SSD/RTX3060Ti (PT)', 1774, 3, '/hp-omen-40l-gt21-0023np-intel-core-i7-12700f-32gb-512gb-ssd-rtx3060ti-pt', 'Sobremesa'),
+(10266544, '//thumb.pccomponentes.com/w-220-220/
+articles/1026/10266544/1846-hp-omen-40l-gt21-0023np-intel-core-i7-12700f-32gb-512gb-ssd-rtx3060ti-pt.jpg', 'HP OMEN 40L GT21-0023np Intel Core i7-12700F/32GB/512GB SSD/RTX3060Ti (PT)', 1774, 3, '/hp-omen-40l-gt21-0023np-intel-core-i7-12700f-32gb-512gb-ssd-rtx3060ti-pt', 'Sobremesa'),
 (10266565, '//thumb.pccomponentes.com/w-220-220/articles/1026/10266565/1354-hp-omen-40l-gt21-0020np-amd-ryzen-5-5600x-16gb-512gb-ssd-rtx-3060-pt.jpg', 'HP OMEN 40L GT21-0020np AMD Ryzen 5 5600X/16GB/512GB SSD/RTX 3060 (PT)', 1528, 3, '/hp-omen-40l-gt21-0020np-amd-ryzen-5-5600x-16gb-512gb-ssd-rtx-3060-pt', 'Sobremesa'),
 (10269130, '//thumb.pccomponentes.com/w-220-220/articles/1026/10269130/1316-msi-mpg-z690-force-wifi.jpg', 'MSI MPG Z690 FORCE WIFI Reacondicionado', 328, 3, '/msi-mpg-z690-force-wifi-reacondicionado', 'Placas Base'),
 (10274538, '//thumb.pccomponentes.com/w-140-140/articles/1027/10274538/1966-goodram-irdm-pro-m2-2tb-ssd-heatsink-pcie-4x4-nvme.jpg', 'GoodRam IRDM PRO M.2 2TB SSD Heatsink PCIe 4x4 NVMe', 445, 3, '/goodram-irdm-pro-m2-2tb-ssd-heatsink-pcie-4x4-nvme', 'Discos Duros'),
@@ -2274,96 +2165,3 @@ INSERT INTO `products` (`id`, `img`, `name`, `price`, `rating`, `slug`, `categor
 (10294073, '//thumb.pccomponentes.com/w-220-220/articles/1029/10294073/1831-msi-mpg-trident-3-10si-400xib-intel-core-i5-10400f-16gb-512gb-ssd-gtx-1660-super.jpg', 'MSI MPG Trident 3 10SI-400XIB Intel Core i5-10400F/16GB/512GB SSD/GTX 1660 SUPER Reacondici', 860, 3, '/msi-mpg-trident-3-10si-400xib-intel-core-i5-10400f16gb512gb-ssdgtx-1660-super-reacondicionado', 'Sobremesa'),
 (10294827, '//thumb.pccomponentes.com/w-220-220/articles/1029/10294827/1481-msi-pro-b660m-a-wifi-ddr4.jpg', 'MSI PRO B660M-A WIFI DDR4 Reacondicionado', 156, 3, '/msi-pro-b660m-a-wifi-ddr4-reacondicionado', 'Placas Base'),
 (10295680, '//thumb.pccomponentes.com/w-220-220/articles/1029/10295680/142-iiyama-g-master-red-eagle-gb3466wqsu-b1-34-led-ultrawide-qhd-144hz-freesync-premium-pro-curva.jpg', 'Iiyama G-MASTER Red Eagle GB3466WQSU-B1 34 LED UltraWide QHD 144Hz FreeSync Premium Pro Cur', 467, 3, '/iiyama-g-master-red-eagle-gb3466wqsu-b1-34-led-ultrawide-qhd-144hz-freesync-premium-pro-curva-rea', 'Monitores');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `returns`
---
-
-CREATE TABLE `returns` (
-  `id` int(11) NOT NULL,
-  `ammount` float NOT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp(),
-  `order_id` int(11) NOT NULL,
-  `hash` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `categories`
---
-ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `contactus`
---
-ALTER TABLE `contactus`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `orders`
---
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `payments`
---
-ALTER TABLE `payments`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `products`
---
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `returns`
---
-ALTER TABLE `returns`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `categories`
---
-ALTER TABLE `categories`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT for table `contactus`
---
-ALTER TABLE `contactus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `orders`
---
-ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `payments`
---
-ALTER TABLE `payments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `returns`
---
-ALTER TABLE `returns`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

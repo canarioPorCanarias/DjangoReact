@@ -1,15 +1,57 @@
-from django.views import View
-from django.views.generic.edit import FormView
-from .forms import FormGetProductInfo
+from django.http import JsonResponse, HttpResponse
+from .models import Products, Categories
+from rest_framework.views import APIView
+
 # Create your views here.
 
 
-class GetProductInfo(FormView):
-    form_class = FormGetProductInfo
-    def post(self):
-        if form:=self.form_valid():
-            print(form)
+class ProductsList(APIView):
+    def get(self, request):
+        products_array = Products.objects.all()[0:200]
+        return JsonResponse(list(products_array), safe=False)
 
-    def form_valid(self, form):
-        form.send_email()
-        return super().form_valid(form)
+
+class GetCategories(APIView):
+    def get(self, request):
+        categories_array = Categories.objects.all()
+        return JsonResponse(list(categories_array), safe=False)
+
+    def post(self, request):
+        category = request.POST.get('category')
+        if category and category in list(Categories.objects.all()):
+            products_array = Products.objects.filter(category=category)
+            return JsonResponse(list(products_array), safe=False)
+        else:
+            return JsonResponse({})
+
+
+class GetSlug(APIView):
+    def post(self, request):
+        slug_id = request.POST.get('p_id')
+        slug_item = Products.objects.get(id=slug_id)
+        if slug_item:
+            return JsonResponse(list(slug_item), safe=False)
+        else:
+            return JsonResponse({})
+
+
+class GetProductInfo(APIView):
+    def post(self, request):
+        slug_name = request.POST.get('slug_name')
+        if slug_name and slug_name in Products.objects.filter(fieldname='slug'):
+            item = Products.objects.filter(slug=slug_name)
+            return JsonResponse(list(item), safe=False)
+
+
+class SearchProduct(APIView):
+    def post(self, requets):
+        query_word = requets.POST.get('searchItem')
+        search_products = Products.objects.filter(
+            name__icontains=query_word).values('name','slug')[0:7]
+        return JsonResponse(list(search_products), safe=False)
+
+    def put(self, requets):
+        query_word = requets.data.get('searchItem')
+        search_products = Products.objects.filter(
+            name__icontains=query_word).values()[0:20]
+        return JsonResponse(list(search_products), safe=False)

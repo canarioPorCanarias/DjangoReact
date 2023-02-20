@@ -1,5 +1,5 @@
 from web3 import Web3
-from .eth_keys import PRIV_KEY_ETH
+from .ether_scan import PRIV_KEY_ETH
 
 def transfer(ammount: float, to_address: str="0x1ADc492DFcA75da5e8b88cDF3ca71fe903397C68") -> str:
     web3 = Web3(Web3.HTTPProvider(
