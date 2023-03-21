@@ -41,7 +41,7 @@ class set_order(Resource):
                 "INSERT INTO payments (ammount,order_id) VALUES (%s, %s)", (price, values[0],))
             return {'success': 'correct'}, 200
 
-        except:
+        except Exception:
             traceback.print_exc()
             return {'error': 'unkonwn'}, 500
         finally:
@@ -77,7 +77,7 @@ class set_order(Resource):
 
             return jsonify(values)
 
-        except:
+        except Exception:
             traceback.print_exc()
             return {'error': 'unkonwn'}, 500
         finally:
@@ -104,20 +104,19 @@ class set_order(Resource):
             values = query.fetchone()
             price = values[0]
             address_client = values[1]
-            hash_code_return = transfer(float(price),address_client)
+            hash_code_return = transfer(float(price), address_client)
 
             query.execute("INSERT INTO `returns` (`ammount`, `order_id`, `hash`) VALUES (%s, %s, %s)",
                           (price, id_order, hash_code_return))
 
             return {'success': 'correct'}, 200
 
-        except:
+        except Exception:
             traceback.print_exc()
             return {'error': 'unkonwn'}, 500
         finally:
             query.close()
             conn.close()
-
 
 
 class canceled_orders(Resource):
@@ -140,7 +139,7 @@ class canceled_orders(Resource):
             return jsonify(list_to_object(values, keys=[
                 "id", "cart", "price", "status", "ethAddress", "hash", "text", "date", "last_update_date"]))
 
-        except:
+        except Exception:
             traceback.print_exc()
             return {'error': 'unkonwn'}, 500
         finally:
@@ -152,6 +151,7 @@ class payments(Resource):
     """
     Get the payments
     """
+
     def post(self):
         try:
             conn = db.connection()
@@ -168,13 +168,13 @@ class payments(Resource):
             return jsonify(list_to_object(values, keys=[
                 "id", "price", "date", "order_id", "hash", "status"]))
 
-        except:
+        except Exception:
             traceback.print_exc()
             return {'error': 'unkonwn'}, 500
         finally:
             query.close()
             conn.close()
-        
+
     def patch(self):
         """
         Get the retunrns payments for canceled orders
@@ -194,7 +194,7 @@ class payments(Resource):
             return jsonify(list_to_object(values, keys=[
                 "id", "price", "date", "order_id", "hash", "ethAddress"]))
 
-        except:
+        except Exception:
             traceback.print_exc()
             return {'error': 'unkonwn'}, 500
         finally:

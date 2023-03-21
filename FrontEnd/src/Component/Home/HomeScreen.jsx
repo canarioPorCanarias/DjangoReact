@@ -7,7 +7,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 // Importamos componentes.
 import { UserContext } from '../Context/User/UserContext';
 import LoadingPage from '../LoadingPage/LoadingPage';
-import {PaginatedItems,Items} from './Paginator'
+import { PaginatedItems, Items } from './Paginator'
 
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -37,9 +37,9 @@ export default function HomeScreen() {
             axios.post(api.API_URL + 'categories', { 'category': category_url }).then((res, err) => {
                 if (!err) {
                     setproducts(res.data)
-                    console.log(category_url)
+
                 }
-                
+
             })
         }
     }, [category_url])
@@ -65,7 +65,7 @@ export default function HomeScreen() {
         //         setproducts(res.data)
         //     }
         // })
-    
+
     }
 
 
@@ -83,8 +83,9 @@ export default function HomeScreen() {
                         <select className="form-select form-select-sm w-auto" aria-label=".form-select-sm " onChange={handleChanged} defaultValue={'DEFAULT'} >
                             <option value="DEFAULT" disabled >Categorias</option>
                             {categories.map((val, idx) => {
+
                                 return (
-                                    <option value={val[1]} key={idx} defaultValue={category_url === val[1]}>{val[1]} </option>
+                                    <option value={val.categories} key={idx} defaultValue={category_url === val.categories}>{val.categories} </option>
                                 )
                             })}
                         </select>
@@ -96,7 +97,7 @@ export default function HomeScreen() {
                         </select>
                     </div>
                     <div className="row row-cols row-cols-md-5 g-5 w-75 mx-auto mt-0">
-                    <Items currentItems={currentItems}  />
+                        <Items currentItems={currentItems} />
                     </div>
                     <PaginatedItems itemsPerPage={20} products={products} setCurrentItems={setCurrentItems} categories={categories} SortType={SortType}></PaginatedItems>
 
